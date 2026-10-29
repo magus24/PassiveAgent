@@ -1,0 +1,151 @@
+
+/* --- User Profile --- */
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 20px 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.profile-info h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.profile-meta {
+  display: flex;
+  gap: 16px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.profile-risk {
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.profile-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+.profile-card h3 {
+  margin: 0 0 16px 0;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.reasons-list ul, .history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reasons-list li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  line-height: 1.4;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-date {
+  color: var(--text-muted);
+}
+
+.stats-grid-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.stat-item-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-item-inner .stat-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.stat-item-inner .stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.profile-messages {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.profile-messages-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.profile-messages-header h3 {
+  margin: 0;
+}
+
+.inline-filters {
+  display: flex;
+  gap: 12px;
+}
+
+.selectable-table tbody tr.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.selectable-table tbody tr.clickable-row:hover {
+  background-color: #f9fafb;
+}
+
+.user-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.user-link:hover {
+  text-decoration: underline;
+}
